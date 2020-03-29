@@ -5,14 +5,14 @@
 ### Установка пакета и запуск brain-even
 [![asciicast](https://asciinema.org/a/0zuG0oQyEOjq6IDXpbnIFOZVN.svg)](https://asciinema.org/a/0zuG0oQyEOjq6IDXpbnIFOZVN)
 
-### Запуск brain-calc
-[![asciicast](https://asciinema.org/a/ZMidcJ6TdGcotjZsKjeNt2I2U.svg)](https://asciinema.org/a/ZMidcJ6TdGcotjZsKjeNt2I2U)
+### Установка пакета и запуск  brain-calc
+[![asciicast](https://asciinema.org/a/DwpbHrDwpIT4VAtl99xBkc2wU.svg)](https://asciinema.org/a/DwpbHrDwpIT4VAtl99xBkc2wU)
 
-### Запуск brain-gcd
-[![asciicast](https://asciinema.org/a/6CrFo5IOLxN2PFaxkbgBOUhVK.svg)](https://asciinema.org/a/6CrFo5IOLxN2PFaxkbgBOUhVK)
+### Установка пакета и запуск  brain-gcd
+[![asciicast](https://asciinema.org/a/RyRGdV78jAQCxq3RJ2qpdZUGt.svg)](https://asciinema.org/a/RyRGdV78jAQCxq3RJ2qpdZUGt)
 
-### Запуск brain-progression
-[![asciicast](https://asciinema.org/a/c9frGECTiPYXwlfmHGaUymoqW.svg)](https://asciinema.org/a/c9frGECTiPYXwlfmHGaUymoqW)
+### Установка пакета и запуск   brain-progression
+[![asciicast](https://asciinema.org/a/lqIXEK5PQrse03vMjvzOQDvhz.svg)](https://asciinema.org/a/lqIXEK5PQrse03vMjvzOQDvhz)
 
-### Запуск brain-prime
-[![asciicast](https://asciinema.org/a/pOjANYBxUej9I47Iz7Sl9z3w5.svg)](https://asciinema.org/a/pOjANYBxUej9I47Iz7Sl9z3w5)
+### Установка пакета и запуск brain-prime
+[![asciicast](https://asciinema.org/a/PZ4ncZlhK7x7B9y8Jj2R1AA8n.svg)](https://asciinema.org/a/PZ4ncZlhK7x7B9y8Jj2R1AA8n)
