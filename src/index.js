@@ -7,7 +7,7 @@ const greeting = () => {
 export const gameEngine = (condition, f) => {
   greeting();
   const name = readlineSync.question('May I have your name?');
-  console.log(`Hello, ${name} !`);
+  console.log(`Hello, ${name}!`);
   console.log(condition);
   for (let counter = 0; counter < 3; counter += 1) {
     const [question, rightAnswer] = f();
