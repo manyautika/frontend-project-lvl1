@@ -1,3 +1,7 @@
+install:
+	npm install
+link:
+	sudo npm link
 start:
 	node bin/brain-games.js
 publish:
