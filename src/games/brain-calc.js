@@ -1,26 +1,31 @@
 import { gameEngine } from '../index.js';
+import getRandom from '../functions.js';
+
+const f = () => {
+  const randomFirst = getRandom(10);
+  const randomSecond = getRandom(10);
+  const operands = ['+', '-', '*'];
+  const index = getRandom(3, 0);
+  const question = `${randomFirst} ${operands[index]} ${randomSecond}`;
+  let rightAnswer;
+  switch (operands[index]) {
+    case '+':
+      rightAnswer = randomFirst + randomSecond;
+      break;
+    case '-':
+      rightAnswer = randomFirst - randomSecond;
+      break;
+    case '*':
+      rightAnswer = randomFirst * randomSecond;
+      break;
+    default:
+  }
+  return [question, rightAnswer.toString()];
+};
 
 const calculation = () => {
   const condition = 'What is the result of the expression?';
-  const f = () => {
-    const randomFirst = Math.floor(Math.random() * 50) + 1;
-    const randomSecond = Math.floor(Math.random() * 50) + 1;
-    const operands = ['+', '-', '*'];
-    const index = Math.floor(Math.random() * 2) + 1;
-    const expressions = `${randomFirst} ${operands[index]} ${randomSecond}`;
-    const question = `Question: ${expressions}`;
-    let rightAnswer;
-    if (index === 0) {
-      rightAnswer = randomFirst + randomSecond;
-    }
-    if (index === 1) {
-      rightAnswer = randomFirst - randomSecond;
-    }
-    if (index === 2) {
-      rightAnswer = randomFirst * randomSecond;
-    }
-    return [question, rightAnswer.toString()];
-  };
   gameEngine(condition, f);
 };
+
 export default calculation;

@@ -1,28 +1,31 @@
 import { gameEngine } from '../index.js';
+import getRandom from '../functions.js';
 
 const makeProgression = (n) => {
+  const step = getRandom(3, 2);
   let currentNum = n;
   const arr = [];
-  for (let i = 0; i < 10; i += 1) {
+  const progrLength = 10;
+  for (let i = 0; i < progrLength; i += 1) {
     arr[i] = currentNum;
-    currentNum += 2;
+    currentNum += step;
   }
   return arr;
 };
 
-const progression = () => {
-  const condition = 'What number is missing in the progression?';
-  const f = () => {
-    const randomNum = Math.floor(Math.random() * 50) + 1;
-    const temporaryArr = makeProgression(randomNum);
-    const index = Math.floor(Math.random() * 9) + 1;
-    const expressions = [...temporaryArr];
-    expressions[index] = '..';
-    const question = `Question: ${expressions.join(' ')}`;
-    const rightAnswer = temporaryArr[index];
-    return [question, rightAnswer.toString()];
-  };
-  gameEngine(condition, f);
+const f = () => {
+  const randomNum = getRandom(50);
+  const temporaryArr = makeProgression(randomNum);
+  const index = getRandom(9);
+  const expressions = [...temporaryArr];
+  expressions[index] = '..';
+  const question = `${expressions.join(' ')}`;
+  const rightAnswer = temporaryArr[index];
+  return [question, rightAnswer.toString()];
 };
 
+const progression = () => {
+  const condition = 'What number is missing in the progression?';
+  gameEngine(condition, f);
+};
 export default progression;

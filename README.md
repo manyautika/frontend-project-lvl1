@@ -1,5 +1,5 @@
 # frontend-project-lvl1
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/108e0ed7654718b0e6b7/maintainability)](https://codeclimate.com/github/manyautika/frontend-project-lvl1/maintainability)
 
 ![CI](https://github.com/manyautika/frontend-project-lvl1/workflows/CI/badge.svg)
 ### Установка пакета и запуск brain-even

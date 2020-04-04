@@ -11,17 +11,15 @@ export const gameEngine = (condition, f) => {
   console.log(condition);
   for (let counter = 0; counter < 3; counter += 1) {
     const [question, rightAnswer] = f();
-    console.log(question);
+    console.log(`Question: ${question}`);
     const decision = readlineSync.question('Your answer:');
     if (decision !== rightAnswer) {
       console.log(`"${decision}" is wrong answer ;(. Correct answer was "${rightAnswer}"`);
       console.log(`Let's try again, ${name}`);
-      return false;
     }
     console.log('Correct!');
   }
   console.log(`Congratulations, ${name}!`);
-  return null;
 };
 
 export default greeting;
