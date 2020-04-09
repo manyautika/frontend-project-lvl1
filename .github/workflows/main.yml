@@ -24,7 +24,7 @@ jobs:
       run: npm install
       
     # Runs a single command using the runners shell
-    - name: ran eslint
+    - name: run eslint
       run: make lint
 
  

@@ -1,7 +1,7 @@
 {
   "name": "frontend-project-lvl1",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a package with five games that you can run and play in the console.",
   "main": "src/index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/manyautika/frontend-project-lvl1.git"
   },
-  "author": "",
+  "author": "Mariya Utkina",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/manyautika/frontend-project-lvl1/issues"
@@ -34,5 +34,16 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.20.1"
-  }
+  },
+  "keywords": [
+    "games",
+    "console",
+    "calculating",
+    "greatest-common-divisor",
+    "parity",
+    "arithmetic-progression",
+    "prime",
+    "numbers",
+    "project"
+  ]
 }

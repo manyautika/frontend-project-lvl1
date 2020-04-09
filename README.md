@@ -1,18 +1,34 @@
+
 # frontend-project-lvl1
+### This is a package with five games that you can run and play in the console.
 [![Maintainability](https://api.codeclimate.com/v1/badges/108e0ed7654718b0e6b7/maintainability)](https://codeclimate.com/github/manyautika/frontend-project-lvl1/maintainability)
-
 ![CI](https://github.com/manyautika/frontend-project-lvl1/workflows/CI/badge.svg)
-### Установка пакета и запуск brain-even
-[![asciicast](https://asciinema.org/a/0zuG0oQyEOjq6IDXpbnIFOZVN.svg)](https://asciinema.org/a/0zuG0oQyEOjq6IDXpbnIFOZVN)
+# Requirements
+* ### Mac/Linux
+* ### Node & npm
+# Install
 
-### Установка пакета и запуск  brain-calc
-[![asciicast](https://asciinema.org/a/DwpbHrDwpIT4VAtl99xBkc2wU.svg)](https://asciinema.org/a/DwpbHrDwpIT4VAtl99xBkc2wU)
+### Before gaming use next command from the package directory
+```
+make install
+```
+# Usage
+## brain-even 
+#### you need to answer if number is even or not
+[![asciicast](https://asciinema.org/a/318218.svg)](https://asciinema.org/a/318218)
 
-### Установка пакета и запуск  brain-gcd
-[![asciicast](https://asciinema.org/a/RyRGdV78jAQCxq3RJ2qpdZUGt.svg)](https://asciinema.org/a/RyRGdV78jAQCxq3RJ2qpdZUGt)
+## brain-calc
+### calculate the simple math expressions
+[![asciicast](https://asciinema.org/a/318219.svg)](https://asciinema.org/a/318219)
 
-### Установка пакета и запуск   brain-progression
-[![asciicast](https://asciinema.org/a/lqIXEK5PQrse03vMjvzOQDvhz.svg)](https://asciinema.org/a/lqIXEK5PQrse03vMjvzOQDvhz)
+## brain-gcd
+### find out the greatest common divisor of two numbers
+[![asciicast](https://asciinema.org/a/318222.svg)](https://asciinema.org/a/318222)
 
-### Установка пакета и запуск brain-prime
-[![asciicast](https://asciinema.org/a/PZ4ncZlhK7x7B9y8Jj2R1AA8n.svg)](https://asciinema.org/a/PZ4ncZlhK7x7B9y8Jj2R1AA8n)
+## brain-progression
+### find the missing number
+[![asciicast](https://asciinema.org/a/318223.svg)](https://asciinema.org/a/318223)
+
+## brain-prime
+### guess if number is prime or not
+[![asciicast](https://asciinema.org/a/318224.svg)](https://asciinema.org/a/318224)

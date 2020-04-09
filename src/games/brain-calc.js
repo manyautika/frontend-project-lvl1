@@ -1,14 +1,14 @@
-import { gameEngine } from '../index.js';
+import gameEngine from '../index.js';
 import getRandom from '../functions.js';
 
-const f = () => {
-  const randomFirst = getRandom(10);
-  const randomSecond = getRandom(10);
-  const operands = ['+', '-', '*'];
-  const index = getRandom(3, 0);
-  const question = `${randomFirst} ${operands[index]} ${randomSecond}`;
+const generateStage = () => {
+  const randomFirst = getRandom();
+  const randomSecond = getRandom();
+  const mathSymbols = ['+', '-', '*'];
+  const index = getRandom(0, mathSymbols.length);
+  const question = `${randomFirst} ${mathSymbols[index]} ${randomSecond}`;
   let rightAnswer;
-  switch (operands[index]) {
+  switch (mathSymbols[index]) {
     case '+':
       rightAnswer = randomFirst + randomSecond;
       break;
@@ -25,7 +25,7 @@ const f = () => {
 
 const calculation = () => {
   const condition = 'What is the result of the expression?';
-  gameEngine(condition, f);
+  gameEngine(condition, generateStage);
 };
 
 export default calculation;
