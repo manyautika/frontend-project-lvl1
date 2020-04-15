@@ -1,6 +1,7 @@
 import gameEngine from '../index.js';
 import getRandom from '../functions.js';
 
+const condition = 'What is the result of the expression?';
 const generateStage = () => {
   const randomFirst = getRandom();
   const randomSecond = getRandom();
@@ -22,10 +23,7 @@ const generateStage = () => {
   }
   return [question, rightAnswer.toString()];
 };
-
-const calculation = () => {
-  const condition = 'What is the result of the expression?';
+const runCalculation = () => {
   gameEngine(condition, generateStage);
 };
-
-export default calculation;
+export default runCalculation;

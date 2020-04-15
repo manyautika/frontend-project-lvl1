@@ -1,8 +1,8 @@
 import gameEngine from '../index.js';
 import getRandom from '../functions.js';
 
-const makeProgression = (n) => {
-  const step = getRandom(2, 3);
+const condition = 'What number is missing in the progression?';
+const makeProgression = (n, step) => {
   let currentNum = n;
   const progression = [];
   const progrLength = 10;
@@ -12,20 +12,17 @@ const makeProgression = (n) => {
   }
   return progression;
 };
-
 const generateStage = () => {
-  const randomNum = getRandom();
-  const temporaryArr = makeProgression(randomNum);
-  const index = getRandom(1, temporaryArr.length - 1);
-  const expressions = [...temporaryArr];
+  const firstNum = getRandom();
+  const progression = makeProgression(firstNum, getRandom(2, 3));
+  const index = getRandom(1, progression.length - 1);
+  const expressions = [...progression];
   expressions[index] = '..';
-  const question = `${expressions.join(' ')}`;
-  const rightAnswer = temporaryArr[index];
+  const question = expressions.join(' ');
+  const rightAnswer = progression[index];
   return [question, rightAnswer.toString()];
 };
-
-const progression = () => {
-  const condition = 'What number is missing in the progression?';
+const runProgression = () => {
   gameEngine(condition, generateStage);
 };
-export default progression;
+export default runProgression;
