@@ -1,5 +1,5 @@
 import gameEngine from '../index.js';
-import getRandom from '../functions.js';
+import getRandom from '../random-num.js';
 
 const condition = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 const isPrime = (n) => {
@@ -15,9 +15,8 @@ const isPrime = (n) => {
   return true;
 };
 const generateStage = () => {
-  const randomNum = getRandom();
-  const question = randomNum;
-  const rightAnswer = isPrime(randomNum) ? 'yes' : 'no';
+  const question = getRandom();
+  const rightAnswer = isPrime(question) ? 'yes' : 'no';
   return [question.toString(), rightAnswer];
 };
 const runPrime = () => {

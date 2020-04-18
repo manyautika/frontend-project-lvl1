@@ -1,5 +1,5 @@
 import gameEngine from '../index.js';
-import getRandom from '../functions.js';
+import getRandom from '../random-num.js';
 
 const condition = 'Answer "yes" if the number is even, otherwise answer "no".';
 const generateStage = () => {

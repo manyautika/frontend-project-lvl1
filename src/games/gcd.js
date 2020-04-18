@@ -1,5 +1,5 @@
 import gameEngine from '../index.js';
-import getRandom from '../functions.js';
+import getRandom from '../random-num.js';
 
 const condition = 'Find the greatest common divisor of given numbers.';
 const findGCD = (first, second) => {

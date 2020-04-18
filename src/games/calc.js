@@ -1,15 +1,15 @@
 import gameEngine from '../index.js';
-import getRandom from '../functions.js';
+import getRandom from '../random-num.js';
 
 const condition = 'What is the result of the expression?';
 const generateStage = () => {
   const randomFirst = getRandom();
   const randomSecond = getRandom();
-  const mathSymbols = ['+', '-', '*'];
-  const index = getRandom(0, mathSymbols.length);
-  const question = `${randomFirst} ${mathSymbols[index]} ${randomSecond}`;
+  const operations = ['+', '-', '*'];
+  const index = getRandom(0, operations.length);
+  const question = `${randomFirst} ${operations[index]} ${randomSecond}`;
   let rightAnswer;
-  switch (mathSymbols[index]) {
+  switch (operations[index]) {
     case '+':
       rightAnswer = randomFirst + randomSecond;
       break;
