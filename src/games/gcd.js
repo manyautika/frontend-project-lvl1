@@ -20,7 +20,7 @@ const generateStage = () => {
   const rightAnswer = findGCD(randomFirst, randomSecond);
   return [question, rightAnswer.toString()];
 };
-const runGCD = () => {
+const startGame = () => {
   gameEngine(condition, generateStage);
 };
-export default runGCD;
+export default startGame;

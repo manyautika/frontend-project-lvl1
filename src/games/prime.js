@@ -19,7 +19,7 @@ const generateStage = () => {
   const rightAnswer = isPrime(question) ? 'yes' : 'no';
   return [question.toString(), rightAnswer];
 };
-const runPrime = () => {
+const startGame = () => {
   gameEngine(condition, generateStage);
 };
-export default runPrime;
+export default startGame;

@@ -14,7 +14,7 @@ const makeProgression = (n, step) => {
 };
 const generateStage = () => {
   const firstNum = getRandom();
-  const step = getRandom(2, 3);
+  const step = getRandom(2, 4);
   const progression = makeProgression(firstNum, step);
   const index = getRandom(1, progression.length - 1);
   const expression = [...progression];
@@ -23,7 +23,7 @@ const generateStage = () => {
   const rightAnswer = progression[index];
   return [question, rightAnswer.toString()];
 };
-const startProgression = () => {
+const startGame = () => {
   gameEngine(condition, generateStage);
 };
-export default startProgression;
+export default startGame;

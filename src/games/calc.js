@@ -6,7 +6,7 @@ const generateStage = () => {
   const randomFirst = getRandom();
   const randomSecond = getRandom();
   const operations = ['+', '-', '*'];
-  const index = getRandom(0, operations.length);
+  const index = getRandom(0, operations.length - 1);
   const question = `${randomFirst} ${operations[index]} ${randomSecond}`;
   let rightAnswer;
   switch (operations[index]) {
@@ -23,7 +23,7 @@ const generateStage = () => {
   }
   return [question, rightAnswer.toString()];
 };
-const runCalculation = () => {
+const startGame = () => {
   gameEngine(condition, generateStage);
 };
-export default runCalculation;
+export default startGame;

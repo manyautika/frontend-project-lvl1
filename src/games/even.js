@@ -7,7 +7,7 @@ const generateStage = () => {
   const rightAnswer = question % 2 === 0 ? 'yes' : 'no';
   return [question.toString(), rightAnswer];
 };
-const runEven = () => {
+const startGame = () => {
   gameEngine(condition, generateStage);
 };
-export default runEven;
+export default startGame;
